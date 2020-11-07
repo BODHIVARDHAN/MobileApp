@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="text-align: center;">{{'MyAccount.Setting' | translate}}</ion-title>
+    <!-- <ion-buttons slot="end">
+      <ion-icon class="logout" name="settings-outline" (click)="gotoStting()"></ion-icon>
+      <ion-icon class="logout" name="log-out-outline" (click)="logout()"></ion-icon>
+    </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="social-content">
+  <ion-card>
+      <ion-card-content class="ion_card_margin" no-padding>
+          <ion-item class="settings">
+              <ion-icon name="globe" class="icon-color" item-start></ion-icon>
+              <ion-label style="padding-left: 10px;">Select your Language</ion-label>
+              <ion-select [(ngModel)]="lang" (ionChange)="switchLanguage()" okText="Ok"
+                  cancelText="Cancel">
+                  <ion-option value="en">English<span *ngIf="lang != 'en'"> (English)</span>
+                  </ion-option>
+                  <ion-option value="fr">French<span *ngIf="lang != 'en'"> (French)</span>
+                  </ion-option>
+              </ion-select>
+          </ion-item>
+          <ion-item class="settings" (click)="logout()">
+              <ion-icon name="log-out" class="icon-color" item-start></ion-icon>
+              <!-- <ion-icon name="lock" class="icon-color" item-start></ion-icon> -->
+              <ion-label style="padding-left: 10px;">Log out</ion-label>
+          </ion-item>
+      </ion-card-content>
+  </ion-card>
+</ion-content>

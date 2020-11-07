@@ -1,0 +1,179 @@
+{
+    "HOME": {
+        "loading":"loading",
+        "MIMOBI": "MIMOBI",
+        "My Photo Of Day":"My Photo Of Day",
+        "Login":"Login",
+        "Register":"Register",
+        "Photo Of The Day":"Photo Of The Day",
+        "Like":"Like",
+        "Dislike":"Dislike",
+        "Day Photo":"Day Photo",
+        "Capture":"Capture",
+        "My Stats":"My Stats",
+        "Category":"Category",
+        "Photo Discription":"Photo Discription",
+        "Log In":"Log In",
+        "My Account":"My Account",
+        "Captured Photo":"Captured Photo",
+        "Capture Photo":"Capture Photo",
+        "Photosofweek":"Photo's of Week",
+        "Photo Details":"Photo Details",
+        "Categories":"Categories",
+        "My Day Photo":"My Day Photo",
+        "User Advantage":"User Advantage",
+        "Most Liked Photo":"Most Liked Photo",
+        "photo_day_not_available":"Photo of day not available",
+        "assign_photo_of_the_day_not_found":"My Photo of day not available",
+        "no_photo_found":"Photo of day not available",
+        "Week Photo":"Week Photo",
+        "Register As":"Register As"
+    },
+    "ImageOfDay":{
+        "Capture Image":"Capture Image",
+        "Return":"Return"
+    },
+    "Login":{
+        "Email is required":"Email is required",
+        "Invalid email":"Invalid email",
+        "Password is required":"Password is required",
+        "passwordValid":"Password length should between 8 to 15 and it should contain uppercase,lowercase characters and numbers.",
+        "Email":"Email",
+        "Password":"Password",
+        "Log In":"Log In",
+        "Forgot password":"Forgot password?",
+        "Guest":"Guest",
+        "OR":"OR",
+        "Dont have an account":"Don't have an account",
+        "Sign up":"Sign up",
+        "Skip Sign in":"Skip Sign in",
+        "login_success":"Login Successfully",
+        "login_failed":"something went wrong please try again later",
+        "please_check_the_credentials":"Please check the credentials."
+    },
+    "PhotoDiscription":{
+        "Photo Title":"Photo Title",
+        "Photo Address":"Photo Address",
+        "Photo Discription":"Photo Discription",
+        "Take Photo":"Take Photo"
+    },
+    "Register":{ 
+        "Email":"Email",
+        "Age":"Age",
+        "Invalid Age":"Invalid Age",
+        "Age is required":"Age is required",
+        "Height":"Height",
+        "Position is required":"Position is required",
+        "Height is required":"Height is required",
+        "Invalid Height":"Invalid Height",
+        "Mobile Number":"Mobile Number",
+        "Password":"Password",
+        "Confirm Password":"Confirm Password",
+        "Sign up":"Sign up",
+        "Have an account":"Already have an account",
+        "Log in":"Log in",
+        "First Name":"First Name",
+        "firstname is required.":"firstname is required.",
+        "Last Name":"Last Name",
+        "lastname is required.":"Lastname is required.",
+        "Email is required":"Email is required",
+        "Invalid email":"Invalid email",
+        "Password is required":"Password is required",
+        "passwordValid":"Password length should between 8 to 15 and it should contain uppercase,lowercase characters and numbers.",
+        "fields required":"Please enter the fields",
+        "passwordMessage":"Password and confirm password should be same",
+        "registration_success":"User Registered Successfully.",
+        "registration_failed":"something went wrong please try again later",
+        "Confirm Password is required":"Confirm Password is required",
+        "I am Agent":"I am Agent",
+        "I am Player":"I am Player",
+        "Position":"Position",
+        "Defender":"Defender",
+        "Middle":"Middle",
+        "Striker":"Striker",
+        "Foot":"Foot",
+        "Foot Left leg":"Foot Left leg",
+        "Foot Right leg":"Foot Right leg",
+        "This field is required.":"This field is required.",
+        "Date of Birth*":"Date of Birth*",
+        "Parent Age":"Parent Age",
+        "Parent Age is required":"Parent Age is required",
+        "Invalid Parent Age":"Invalid Parent Age",
+        "Relation":"Relation",
+        "Father":"Father",
+        "Mother":"Mother",
+        "Brother":"Brother",
+        "Sister":"Sister",
+        "Relation is required":"Relation is required",
+        "Edit Profile":"Edit Profile",
+        "Terms & Conditions":"Terms & Conditions",
+        "Please select Nationality.":"Please select Nationality.",
+        "Nationality":"Nationality",
+        "Salary":"Salary",
+        "Salary is required":"Salary is required",
+        "Invalid salary":"Invalid salary",
+        "Availability":"Availability",
+        "Immediate":"Immediate",
+        "After one month":"After one month",
+        "After two month":"After two month",
+        "Please select Availability.":"Please select Availability."
+    },
+    "SelectImage":{
+        "Click on camera to capture":"Click on camera to capture",
+        "Capture Image":"Capture Image"
+    },
+    "ShowBigImage":{
+        "Comment":"Comment"
+    },
+    "UserRanking":{
+        "Category":"Category",
+        "My Stats":"My Stats"
+    },
+    "UserPhotoDetails":{
+        "Coment":"Comment",
+        "Return":"Return"
+    },
+    "MyStats":{
+        "My Account":"My Account",
+        "Capture Image":"Capture Image"
+    },
+    "MyAccount":{
+        "My Plan":"Active Plan",
+        "My Photos":"My Photos" ,
+        "Photos Left":"Photos Left",
+        "Price":"Price",
+        "Update Profile":"Update Profile",
+        "Personal Information":"Personal Information",
+        "Profile":"Profile",
+        "Save":"Save",
+        "Setting":"Setting"
+    },
+    "Subcription":{
+        "Checkout":"Checkout"
+    },
+    "ComentPopup":{
+        "Mind giving quick feedback":"Mind giving quick feedback",
+        "You can also give comment":"You can also give comment",
+        "Submit":"Submit"
+    },
+    "ShowImage":{
+        "Submit":"Submit",
+        "Photo Category":"Photo Category",
+        "photo_upload_success":"Photo uploaded suceessfully",
+        "photo_upload_fail": "Failed to upload photo",
+        "no_photo_found":"Photo not found",
+        "Please Capture photo":"Please Capture photo",
+        "Please enter discription":"Please enter discription",
+        "Please Select Category":"Please Select Category",
+        "discription_info":"Your discription must be between 15 to 100 characters"
+    },
+    "MostLikedPhoto":{
+        "MostLikedPhoto":"Most Liked Of Day and Week",
+        "most_liked_photo_of_day":"Most liked photo of day",
+        "most_liked_photo_of_week":"Most liked photo of week"
+    },
+    "ForgotPassword":{
+        "Forgot Password":"Forgot Password",
+        "Submit":"Submit"
+    }
+}

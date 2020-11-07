@@ -1,0 +1,19 @@
+.new-background-color{
+    color: white;
+    --background: linear-gradient(90deg, rgba(246,3,22,1) 0%, rgba(33,97,217,1) 100%);
+}
+.img_round {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    max-width: 100% !important;
+    height: 100px !important;
+    // border-radius: 50% !important;
+    width: 100px;
+  }
+  .text{
+    text-align: left;
+    font-size: 15px;
+  }
+  .bold{
+      font-weight: bold;
+  }

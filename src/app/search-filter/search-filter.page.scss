@@ -1,0 +1,88 @@
+.new-background-color{
+    color: white;
+    // background-image: url("../../assets/backgroundimg.jpeg");
+      --background: linear-gradient(90deg, rgba(246,3,22,1) 0%, rgba(33,97,217,1) 100%);
+  }
+.nopad{
+    padding-left: 0;
+}
+.inputLabels{
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.closeButton{
+    position: absolute;
+    right: 4px;
+}
+.submitButton{
+    text-transform: capitalize;
+    --padding-top: 2px;
+}
+.ratingUnit{
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 1px 5px;
+    margin-right: 2px;
+}
+.ratingUnitFirst{
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 1px 3px;
+    margin-right: 2px;
+}
+.ratingFont{
+    font-size: 13px;
+}
+.ratingClicked{
+    background-color: #62B22F;
+}
+.ratingLabel{
+    line-height: 20px
+}
+.tags{
+    height: 35px;
+    width: 100%;
+    border: 1px solid darkgrey;
+}
+.tagsSelected{
+    min-height: 50px;
+    border:1px solid gray;
+    margin-left: 16px; 
+    margin-top: 7px;
+}
+.ionItem{
+    --inner-padding-end: 0;
+    --border-color: white;
+}
+.rangeHeight{
+    height: 80px;
+}
+.distanceText{
+    margin-top: 12px;
+    margin-left: 12px;
+}
+.rateFont{
+    font-size: 9px;
+}
+.ratingUnitFirstReview{
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 1px 2px;
+    margin-right: 2px;
+}
+.ratingUnitReview{
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 1px 4px;
+    margin-right: 2px;
+  }
+.ratingClicked{
+    background-color: #62B22F;
+}
+.rating{
+    font-size: 14px;
+    color: #999999;
+    margin: 0px;
+    margin-left: 8px;
+}

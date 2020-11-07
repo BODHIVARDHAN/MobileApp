@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-buttons slot="end" class="closeButton">
+      <ion-button class="new-background-color" (click)="close()">
+        <ion-icon name="close" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title text-center>
+      Filter
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div>
+    <ion-item>
+      <ion-label class="inputLabels">
+        name :
+      </ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    <ion-item-group>
+      <ion-item-divider style="border: none">
+        <ion-label style="margin-bottom: 0">
+          Height :
+        </ion-label>
+      </ion-item-divider>
+
+      <ion-item>
+        <ion-range no-padding pin="true" min="0" max="9" step="1" class="rangeHeight">
+          <ion-label slot="start">
+            <ion-text class="new-background-color">0 Km</ion-text>
+          </ion-label>
+          <ion-label slot="end">
+            <ion-text class="new-background-color">9 Km</ion-text>
+          </ion-label>
+        </ion-range>
+      </ion-item>
+    </ion-item-group>
+    <ion-item>
+      <ion-label class="inputLabels">Posted Date
+      </ion-label>
+      <ion-datetime Time display-format="h:mm A" picker-format="h:mm A">
+      </ion-datetime>
+    </ion-item>
+    <ion-item margin-bottom>
+      <ion-label class="inputLabels no-margin-bottom">
+        <ion-text color="dark" class="inputLabels fw500">Position</ion-text>
+      </ion-label>
+      <ion-select placeholder="Position" multiple="true" class="selectBox">
+        <ion-select-option value="brown">Defender</ion-select-option>
+        <ion-select-option value="blonde">Middle </ion-select-option>
+        <ion-select-option value="blonde">Striker</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item margin-bottom>
+      <ion-label class="inputLabels no-margin-bottom">
+        <ion-text color="dark" class="inputLabels fw500">Foot</ion-text>
+      </ion-label>
+      <ion-select placeholder="Foot" multiple="true" class="selectBox">
+        <ion-select-option value="brown">Foot Left leg</ion-select-option>
+        <ion-select-option value="blonde">Foot Right leg</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item margin-bottom>
+      <ion-label class="inputLabels no-margin-bottom">
+        <ion-text color="dark" class="inputLabels fw500">Location</ion-text>
+      </ion-label>
+      <ion-select placeholder="Location" multiple="true" class="selectBox">
+        <ion-select-option value="brown">India</ion-select-option>
+        <ion-select-option value="blonde">France</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+  </div>
+  <div>
+    <ion-row>
+      <ion-col>
+        <ion-button class="submitButton" expand="full" shape="round" color="secondary" (click)="filterProducts()">Apply
+        </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button class="submitButton" expand="block" shape="round" fill="outline" color="secondary"
+          (click)="clearForProfile()">Clear</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

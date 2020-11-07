@@ -1,0 +1,197 @@
+.planButton{
+    margin-left: 10px;
+}
+.planItem{
+    border: 1px solid #65C1C1;
+    margin-top: 5px;
+    --border-color: white;
+}
+.planDiv{
+    padding: 10px;
+}
+.new-background-color{
+  color: white;
+  --background: linear-gradient(90deg, rgba(246,3,22,1) 0%, rgba(33,97,217,1) 100%);
+}
+.cardItem{
+    height: 150px;
+    border-radius: 7px;
+    margin: 0;
+}
+.cardImage{
+    height: 100%;
+}
+.deleteIcon{
+    font-size: 20px;
+    color: black;
+}
+.buttonIcon{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    background-color: #68c4c4;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    padding-top: 5px;
+    outline: none;
+}
+
+ion-title{
+    text-align: center;
+    margin-left: -50px;
+}
+.col{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 95%;
+    left: 0;
+    right: 0;
+    margin: auto;
+ }
+ .no-padding {
+    padding: 0px !important;
+  }
+  // .likeButton{ 
+  //   height: 2.5rem;
+  //   font-size: 1em;
+  //   border-radius: 10px;
+  //   background-color: #0080FF;
+  //   width: 100px;
+  // }
+  .likeButton{
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: #0080FF;
+  }
+  .feed-user-wrapper{
+    display: flex;
+    // padding: 5px 16px;
+    padding: 5px 8px;
+    .user-image-wrapper{
+      border-radius: 50%;
+      border: 2px solid lightcoral;
+      height: 55px;
+      position: relative;
+      img{
+        width: 50px;
+        height: 100%;
+        border-radius: 50%;
+        border: 2px solid white;
+        max-width: none;
+      }
+    }
+    .user-details{
+      margin-left: 10px;
+      width: 100%;
+      .user-name{
+        font-size: 14px;
+        // margin: 5px 0;
+        margin: 3px 0px 0px 0px;
+        font-weight: 500;
+        color: #565353;
+      }
+      .user-place{
+        font-size: 13px;
+        color: #565353;
+        margin: 0px;
+      }
+    }
+  }
+  .photoDate{
+    padding-left: 5px;
+    margin: 0;
+  }
+  .logout{
+    font-size: 18px;
+    zoom: 1.3;
+  }
+  .img_round {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    max-width: 100% !important;
+    height: 150px !important;
+    border-radius: 50% !important;
+    width: 150px;
+  }
+  .profile_edit {
+    height: 35px;
+    width: 35px;
+    background-color: #84357e;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 1.2em;
+    z-index: 4;
+    position: relative;
+    overflow: hidden;
+    top: -55px;
+    left: 180px;
+  }
+  .row_bottom_border {
+    border-bottom: 1px solid lightgrey;
+  }
+  .span_message {
+    font-size: 1em;
+    //margin-left: 5%;
+    color: black;
+  }
+  .text-sign{ 
+    bottom: 10px;
+    left: 0;
+    right: 0;
+  }
+  .link-button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    color: #4267B2; 
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .txt_forgotpassword{
+    text-align: center;
+    margin-top: 5px !important;
+      color: #e1306c;
+      font-size: 15px;
+  }
+
+  .row-margin1{
+    width: 90% !important;
+      margin: 0 auto;
+      margin-top: 50px;
+  }
+  .input-border{
+    border-bottom: 1px solid #9E9E9E; 
+}
+.item-native{
+  padding-left: 0px!important;
+}
+.edit_icon {
+  //padding-top: 25%;
+  font-size: 1.7em;
+  color: rgb(166, 166, 166);
+  margin-top: 10px;
+  margin-left:10px;
+  // padding-left: 7px;
+  // float: right;
+}
+.icon_update {
+  font-size: 1.7em;
+  color: green;
+  margin-top: 10px;
+  margin-left:10px;
+  //padding-top: 30%;
+  //float: right;
+}
+.row-margin{
+  width: 90% !important;
+  margin: 0 auto;
+}

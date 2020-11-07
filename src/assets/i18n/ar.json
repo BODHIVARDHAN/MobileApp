@@ -1,0 +1,134 @@
+{
+    "HOME": {
+        "loading":"جار التحميل",
+        "MIMOBI": "MIMOBI",
+        "My Photo Of Day":"صورتي اليوم",
+        "Login":"تسجيل الدخول",
+        "Register":"تسجيل",
+        "Photo Of The Day":"صورة اليوم",
+        "Like":"مثل",
+        "Dislike":"لم يعجبنى",
+        "Day Photo":"Day Photo",
+        "Capture":"Capture",
+        "My Stats":"My Stats",
+        "Category":"Category",
+        "Photo Discription":"Photo Discription",
+        "Log In":"Log In",
+        "My Account":"My Account",
+        "Captured Photo":"Captured Photo",
+        "Capture Photo":"Capture Photo",
+        "Photosofweek":"Photo's of Week",
+        "Photo Details":"Photo Details",
+        "Categories":"Categories",
+        "My Day Photo":"My Day Photo",
+        "User Advantage":"User Advantage",
+        "Most Liked Photo":"Most Liked Photo",
+        "photo_day_not_available":"Photo of day not available",
+        "assign_photo_of_the_day_not_found":"My Photo of day not available",
+        "no_photo_found":"Photo of day not available",
+        "Week Photo":"Week Photo"
+    },
+    "ImageOfDay":{
+        "Capture Image":"Capture Image",
+        "Return":"Return"
+    },
+    "Login":{
+        "Email is required":"Email is required",
+        "Invalid email":"Invalid email",
+        "Password is required":"Password is required",
+        "passwordValid":"يجب أن يتراوح طول كلمة المرور بين 8 إلى 15 ويجب أن تحتوي على أحرف كبيرة وأحرف صغيرة وأرقام.",
+        "Email":"البريد الإلكتروني",
+        "Password":"كلمه السر",
+        "Log In":"تسجيل الدخول",
+        "Forgot password":"هل نسيت كلمة المرور؟",
+        "Guest":"زائر",
+        "OR":"أو",
+        "Dont have an account":"ليس لديك حساب",
+        "Sign up":"سجل",
+        "Skip Sign in":"تخطي تسجيل الدخول",
+        "login_success":"تم تسجيل الدخول بنجاح",
+        "login_failed":"هناك شئ خاطئ، يرجى المحاولة فى وقت لاحق",
+        "please_check_the_credentials":"يرجى التحقق من أوراق الاعتماد."
+    },
+    "PhotoDiscription":{
+        "Photo Title":"Photo Title",
+        "Photo Address":"Photo Address",
+        "Photo Discription":"Photo Discription",
+        "Take Photo":"Take Photo"
+    },
+    "Register":{ 
+        "Email":"Email",
+        "Mobile Number":"Mobile Number",
+        "Password":"Password",
+        "Confirm Password":"Confirm Password",
+        "Sign up":"Sign up",
+        "Have an account":"Already have an account",
+        "Log in":"Log in",
+        "First Name":"First Name",
+        "firstname is required.":"firstname is required.",
+        "Last Name":"Last Name",
+        "lastname is required.":"Lastname is required.",
+        "Email is required":"Email is required",
+        "Invalid email":"Invalid email",
+        "Password is required":"Password is required",
+        "passwordValid":"Password length should between 8 to 15 and it should contain uppercase,lowercase characters and numbers.",
+        "fields required":"Please enter the fields",
+        "passwordMessage":"Password and confirm password should be same",
+        "registration_success":"User Registered Successfully.",
+        "registration_failed":"something went wrong please try again later",
+        "Confirm Password is required":"Confirm Password is required"
+    },
+    "SelectImage":{
+        "Click on camera to capture":"Click on camera to capture",
+        "Capture Image":"Capture Image"
+    },
+    "ShowBigImage":{
+        "Comment":"Comment"
+    },
+    "UserRanking":{
+        "Category":"Category",
+        "My Stats":"My Stats"
+    },
+    "UserPhotoDetails":{
+        "Coment":"Comment",
+        "Return":"Return"
+    },
+    "MyStats":{
+        "My Account":"My Account",
+        "Capture Image":"Capture Image"
+    },
+    "MyAccount":{
+        "My Plan":"Active Plan",
+        "My Photos":"My Photos" ,
+        "Photos Left":"Photos Left",
+        "Price":"Price"
+    },
+    "Subcription":{
+        "Checkout":"Checkout"
+    },
+    "ComentPopup":{
+        "Mind giving quick feedback":"Mind giving quick feedback",
+        "You can also give comment":"You can also give comment",
+        "Submit":"Submit"
+    },
+    "ShowImage":{
+        "Submit":"Submit",
+        "Photo Category":"Photo Category",
+        "photo_upload_success":"Photo uploaded suceessfully",
+        "photo_upload_fail": "Failed to upload photo",
+        "no_photo_found":"Photo not found",
+        "Please Capture photo":"Please Capture photo",
+        "Please enter discription":"Please enter discription",
+        "Please Select Category":"Please Select Category",
+        "discription_info":"Your discription must be between 15 to 100 characters"
+    },
+    "MostLikedPhoto":{
+        "MostLikedPhoto":"Most Liked Of Day and Week",
+        "most_liked_photo_of_day":"Most liked photo of day",
+        "most_liked_photo_of_week":"Most liked photo of week"
+    },
+    "ForgotPassword":{
+        "Forgot Password":"Forgot Password",
+        "Submit":"Submit"
+    }
+}

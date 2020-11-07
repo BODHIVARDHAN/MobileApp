@@ -1,0 +1,135 @@
+.input-border{
+    border-bottom: 1px solid #9E9E9E; 
+}
+.row-margin1{
+	width: 90% !important;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.row-margin{
+	width: 90% !important;
+    margin: 0 auto;
+}
+.btn-login{
+    width: 100%; 
+    background-image: linear-gradient(#e1306c, #c13584); 
+    height: 2.5rem;
+    font-size: 1em;
+    color: white;
+    border-radius: 20px;
+}
+.div-hr{
+    position: relative; 
+    width: 100%;
+    padding: 15px 25px; 
+}
+.div-or{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #fff;
+    padding: 0px;
+    text-align: center;
+    width: 50px;
+    top: 0px;
+    color: #e1306c;
+}
+.fb-icon{
+    color: #385185;
+    font-size: 1.8rem;
+}
+
+.text-sign{ 
+	bottom: 10px;
+	left: 0;
+	right: 0;
+}
+.txt_forgotpassword{
+	text-align: center;
+	margin-top: 5px !important;
+    color: #e1306c;
+    font-size: 15px;
+}
+.btn-fb{
+    width: 100%;
+    background-color: #4267B2; 
+    border:1px solid #9E9E9E;
+    height: 2.5rem;
+    font-size: 1em;
+    // color: white;
+    border-radius: 20px;
+}
+.btn-google{
+    width: 100%;
+    background-color: #db3236; 
+    border:1px solid #9E9E9E;
+    height: 2.5rem;
+    font-size: 1em; 
+    border-radius: 20px;
+}
+.facebook-icon{ 
+    font-size: 1.6rem;
+    color: white;
+}
+.google-icon{ 
+    font-size: 1.6rem;
+    color: white;
+}
+.or-margin{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto 0;
+    text-align: center;
+}
+.img-div{
+    width: 300px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 50px;
+    }
+.likeButton{
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: #0080FF;
+    }
+.new-background-color{
+    color: white;
+    --background: linear-gradient(90deg, rgba(246,3,22,1) 0%, rgba(33,97,217,1) 100%);
+}
+ion-title{
+    text-align: center;
+    margin-left: -50px;
+}
+.invalid {
+    font-size: 10px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    color: #ca222a;
+}
+.validation{
+    margin-top: 5px !important; 
+    margin-bottom: 5px !important;
+    font-family: "Kamber-light" !important;
+}
+.link-button {
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    color: #4267B2; 
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .card-border{
+    border: 1px solid gray;
+    padding: 10px;
+  }

@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-buttons slot="start">
+      <!-- <ion-back-button defaultHref="/home"></ion-back-button> -->
+    </ion-buttons>
+    <ion-title>{{'HOME.Login' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="account" (ngSubmit)="login(account.value)"> 
+    <ion-row class="row-margin1">
+      <ion-col>
+        <ion-input class="input-border" type="text" placeholder="{{'Login.Email' | translate}}" formControlName="email"></ion-input>
+        <div *ngIf="(account.controls.email.touched || submitAttempt) && account.controls.email.invalid" class="invalid">
+        <p class="validation" *ngIf="account.controls.email.errors.required">{{'Login.Email is required' | translate}}.</p>
+        <p class="validation" *ngIf="account.controls.email.errors.pattern">{{'Login.Invalid email' | translate}}.</p>
+      </div>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="row-margin">
+      <ion-col>
+        <ion-input class="input-border" type="Password" placeholder="{{'Login.Password' | translate}}" formControlName="password"></ion-input>
+        <div *ngIf="(account.controls.password.touched || submitAttempt) && account.controls.password.invalid" class="invalid">
+        <p class="validation" *ngIf="account.controls.password.errors.required">{{'Login.Password is required' | translate}}.</p>
+        <p class="validation" *ngIf="account.controls.password.errors.pattern">{{'Login.passwordValid' | translate}}.</p>
+      </div>
+      <div *ngIf="failedFlag" class="invalid">
+          <p class="validation">{{errormessage | translate}}.</p> 
+        </div>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row class="row-margin">
+      <ion-col class="ion-text-end">
+        <a routerLink="/forgot-password"
+          style="color: #4267B2;font-size: 15px;">{{'Login.Forgot password' | translate}}</a>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row-margin" style="margin-top: 20px;">
+      <ion-col class="no-padding ion-text-left">
+        <button ion-button block class="likeButton">
+          <p style="display: inline-flex; margin: 0px;"> 
+            <span style="padding-left: 10px;font-size: 1.1em; color: white;">{{'Login.Log In' | translate}}</span>
+          </p>
+        </button>
+      </ion-col>
+    </ion-row>
+  </form>
+  <ion-row class="row-margin">
+      <ion-col class="ion-text-end"> 
+        <button class="link-button" (click)="login1()">{{'Login.Skip Sign in' | translate}}</button>
+      </ion-col>
+    </ion-row>
+  <!-- <ion-row class="row-margin" style="margin-top: 20px;">
+      <ion-col class="no-padding ion-text-left">
+        <button ion-button block class="likeButton" (click)="login1()">
+          <p style="display: inline-flex; margin: 0px;"> 
+            <span style="padding-left: 10px;font-size: 1.1em; color: white;">{{'Login.Guest' | translate}}</span>
+          </p>
+        </button>
+      </ion-col>
+    </ion-row> -->
+
+  <!-- <ion-row class="row-margin" style="margin-top: 20px;" (click)="login1()">
+    <ion-col>
+      <ion-button shape="round" class="login">{{'Login.Guest' | translate}}</ion-button>
+    </ion-col>
+  </ion-row> -->
+
+  <div class="div-hr">
+    <hr style="background-color: #d0c8c8;;" />
+    <div class="div-or">
+      <p>{{'Login.OR' | translate}}</p>
+    </div>
+  </div>
+
+  <ion-row>
+    <ion-col class="txt_forgotpassword">
+      <span style="color: black;padding-right: 5px;">{{'Login.Dont have an account' | translate}}?</span> 
+      <button class="link-button" (click)="goToRegister()">{{'Login.Sign up' | translate}}</button>
+    </ion-col>
+  </ion-row>
+</ion-content>
+<ion-footer class="hideElementOnKeyboardShown">
+
+</ion-footer>

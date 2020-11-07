@@ -1,0 +1,35 @@
+.new-background-color{
+    color: white;
+      --background: linear-gradient(90deg, rgba(246,3,22,1) 0%, rgba(33,97,217,1) 100%);
+  }
+  .row-margin1{
+    width: 90% !important;
+      margin: 0 auto;
+      margin-top: 50px;
+  }
+  .input-border{
+    border-bottom: 1px solid #9E9E9E; 
+}
+.row-margin{
+	width: 90% !important;
+    margin: 0 auto;
+} 
+.invalid {
+  font-size: 10px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  color: #ca222a;
+}
+.validation{
+  margin-top: 5px !important; 
+  margin-bottom: 5px !important;
+  font-family: "Kamber-light" !important;
+}
+.likeButton{
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: #0080FF;
+  }

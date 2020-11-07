@@ -1,0 +1,215 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="text-align: center;padding-left: 0px;">Create Post</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="createPost" (ngSubmit)="register(createPost.value)">
+    <ion-row class="row-margin1">
+      <ion-col>
+        <ion-input class="input-border" type="text" placeholder="{{'Register.First Name' | translate}}"
+          formControlName="first_name"></ion-input>
+        <div *ngIf="(createPost.controls.first_name.touched || submitAttempt) && createPost.controls.first_name.invalid"
+          class="invalid">
+          <p class="validation" *ngIf="createPost.controls.first_name.errors.required">
+            {{'Register.firstname is required.' | translate}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row-margin">
+      <ion-col>
+        <ion-input class="input-border" type="text" placeholder="{{'Register.Last Name' | translate}}"
+          formControlName="last_name"></ion-input>
+        <div *ngIf="(createPost.controls.last_name.touched || submitAttempt) && createPost.controls.last_name.invalid"
+          class="invalid">
+          <p class="validation" *ngIf="createPost.controls.last_name.errors.required">
+            {{'Register.lastname is required.' | translate}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="row_bottom_border">
+      <ion-col no-padding>
+        <ion-item no-padding style="color: gray;padding-left: 5px;">
+          <ion-label stacked class="textLabel">{{'Register.Date of Birth*' | translate}}</ion-label>
+          <ion-datetime displayFormat="DD-MMM-YYYY" [max]="currentDate" (ionChange)="validate($event)"
+            [placeholder]="'Date of Birth*' | translate"></ion-datetime>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row-margin">
+      <ion-col>
+        <ion-input class="input-border" type="text" placeholder="{{'Register.Height' | translate}}"
+          formControlName="height"></ion-input>
+        <div *ngIf="(createPost.controls.height.touched || submitAttempt) && createPost.controls.height.invalid"
+          class="invalid">
+          <p class="validation" *ngIf="createPost.controls.height.errors.required">
+            {{'Register.Height is required' | translate}}.</p>
+          <p class="validation" *ngIf="createPost.controls.height.errors.pattern">
+            {{'Register.Invalid Height' | translate}}.
+          </p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row-margin">
+      <ion-col>
+        <ion-input class="input-border" type="text" placeholder="{{'Register.Salary' | translate}}"
+          formControlName="salary"></ion-input>
+        <div *ngIf="(createPost.controls.salary.touched || submitAttempt) && createPost.controls.salary.invalid"
+          class="invalid">
+          <p class="validation" *ngIf="createPost.controls.salary.errors.required">
+            {{'Register.Salary is required' | translate}}.</p>
+          <p class="validation" *ngIf="createPost.controls.salary.errors.pattern">
+            {{'Register.Invalid salary' | translate}}.
+          </p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row-margin" style="margin: 0;
+    margin-left: 5px;">
+      <ion-col>
+        <ion-item style="color: gray;">
+          <ion-label>{{'Register.Position' | translate}}</ion-label>
+          <ion-select multiple="true" value="brown" interface="popover" ok-text="Okay" cancel-text="CANCEL">
+           <ion-select-option value="brown">{{'Register.Defender' | translate}}</ion-select-option>
+            <ion-select-option value="blonde">{{'Register.Middle' | translate}}</ion-select-option>
+            <ion-select-option value="blonde">{{'Register.Striker' | translate}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <div style="padding-left: 10px;"
+          *ngIf="(createPost.controls.position.touched || submitAttempt) && createPost.controls.position.invalid"
+          class="invalid">
+          <p class="validation" *ngIf="createPost.controls.position.errors.required">
+            {{'Register.Position is required' | translate}}.</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row-margin" style="margin: 0;
+    margin-left: 5px;">
+      <ion-col>
+        <ion-item style="color: gray;">
+          <ion-label>{{'Register.Foot' | translate}}</ion-label>
+          <ion-select multiple="true" value="brown" interface="popover" ok-text="Yes" cancel-text="CANCEL">
+            <ion-select-option value="brown">{{'Register.Foot Left leg' | translate}}</ion-select-option>
+            <ion-select-option value="blonde">{{'Register.Foot Right leg' | translate}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <div style="padding-left: 10px;"
+          *ngIf="(createPost.controls.position.touched || submitAttempt) && createPost.controls.position.invalid"
+          class="invalid">
+          <p class="validation" *ngIf="createPost.controls.position.errors.required">
+            {{'Register.This field is required.' | translate}} </p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row-margin" style="margin: 0;
+    margin-left: 5px;">
+      <ion-col>
+        <ion-item style="color: gray;">
+          <ion-label>Nationality</ion-label>
+          <ion-select multiple="true" value="brown" ok-text="Okay" cancel-text="CANCEL">
+            <ion-select-option value="brown">Indian</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <div style="padding-left: 10px;"
+          *ngIf="(createPost.controls.position.touched || submitAttempt) && createPost.controls.position.invalid"
+          class="invalid">
+          <p class="validation" *ngIf="createPost.controls.position.errors.required">
+            {{'Register.Please select Nationality.' | translate}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row-margin" style="margin: 0;
+    margin-left: 5px;">
+      <ion-col>
+        <ion-item style="color: gray;">
+          <ion-label>{{'Register.Availability' | translate}}</ion-label>
+          <ion-select  multiple="true" value="brown" ok-text="Okay" cancel-text="CANCEL">
+            <ion-select-option value="brown">{{'Register.Immediate' | translate}}</ion-select-option>
+            <ion-select-option value="blonde">{{'Register.After one month' | translate}}</ion-select-option>
+            <ion-select-option value="red">{{'Register.After two month' | translate}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <div style="padding-left: 10px;"
+          *ngIf="(createPost.controls.availability.touched || submitAttempt) && createPost.controls.availability.invalid"
+          class="invalid">
+          <p class="validation" *ngIf="createPost.controls.availability.errors.required">
+            {{'Register.Please select Availability.' | translate}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+
+
+
+
+
+
+    <ion-row *ngIf="childAge<18" class="row-margin">
+      <ion-col>
+        <ion-input class="input-border" type="number" placeholder="{{'Register.Parent Age' | translate}}"
+          formControlName="p_age"></ion-input>
+        <div *ngIf="(createPost.controls.p_age.touched || submitAttempt) && createPost.controls.p_age.invalid"
+          class="invalid">
+          <p class="validation" *ngIf="createPost.controls.p_age.errors.required">
+            {{'Register.Parent Age is required' | translate}}</p>
+          <p class="validation" *ngIf="createPost.controls.p_age.errors.pattern">
+            {{'Register.Invalid Parent Age' | translate}}
+          </p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="childAge<18" class="row-margin" style="margin: 0;
+      margin-left: 5px;">
+      <ion-col>
+        <ion-item style="color: gray;">
+          <ion-label>{{'Register.Relation' | translate}}</ion-label>
+          <ion-select value="brown" interface="popover" ok-text="Okay" cancel-text="CANCEL">
+            <ion-select-option value="brown">{{'Register.Father' | translate}}</ion-select-option>
+            <ion-select-option value="blonde">{{'Register.Mother' | translate}}</ion-select-option>
+            <ion-select-option value="blonde">{{'Register.Brother' | translate}}</ion-select-option>
+            <ion-select-option value="blonde">{{'Register.Sister' | translate}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <div style="padding-left: 10px;"
+          *ngIf="(createPost.controls.relation.touched || submitAttempt) && createPost.controls.relation.invalid"
+          class="invalid">
+          <p class="validation" *ngIf="createPost.controls.relation.errors.required">
+            {{'Register.Relation is required' | translate}}.</p>
+        </div>
+      </ion-col>
+    </ion-row>
+
+    <!-- <ion-row class="row-margin">
+      <ion-col>
+        <ion-item style="margin-left: -10px;color: gray;font-size: 14px;;">
+          <ion-checkbox></ion-checkbox>&nbsp;
+          I accept &nbsp;<a (click)="termsPage()">Terms
+            and Conditions</a>
+        </ion-item>
+      </ion-col>
+    </ion-row> -->
+
+    <ion-row class="row-margin" style="margin-top: 20px;">
+      <ion-col class="no-padding ion-text-left">
+        <button ion-button block class="likeButton">
+          <p style="display: inline-flex; margin: 0px;">
+            <span style="padding-left: 10px;font-size: 1.1em; color: white;">{{'MyAccount.Save' | translate}}</span>
+          </p>
+        </button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+</ion-content>

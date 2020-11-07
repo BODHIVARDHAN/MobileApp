@@ -1,0 +1,28 @@
+.new-background-color{
+  color: white;
+  // background-image: url("../../assets/backgroundimg.jpeg");
+    --background: linear-gradient(90deg, rgba(246,3,22,1) 0%, rgba(33,97,217,1) 100%);
+}
+.line {
+  border-bottom: 1px solid #e0e0e0;
+}
+.height-width {
+  height: 74px;
+  width: 75px;
+  border-radius: 10px;
+}
+.text-overflow{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: black;
+}
+.text-right{
+  text-align: right;
+}
+.item-inner {
+  padding: 0px!important;
+}
+.item-native {
+  padding: 0px!important;
+}
