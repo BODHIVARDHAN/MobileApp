@@ -1,10 +1,11 @@
 import { Component, ViewChild } from '@angular/core';
-import { ToastController, AlertController, LoadingController, Platform, PopoverController } from '@ionic/angular';
+import { ToastController, AlertController, LoadingController, Platform, PopoverController, ModalController } from '@ionic/angular';
 import { InAppPurchase2, IAPProduct } from '@ionic-native/in-app-purchase-2/ngx';
 import { Router, ActivatedRoute } from '@angular/router';
 import { GlobalserviceService } from '../service/globalservice.service';
 import { ApiService } from '../service/api.service';
 import { TranslateService } from '@ngx-translate/core';
+import { SearchFilterPage } from '../search-filter/search-filter.page';
 
 @Component({
   selector: 'app-home',
@@ -39,6 +40,7 @@ export class HomePage {
     public alertController: AlertController,
     public loadingCtrl: LoadingController,
     private store: InAppPurchase2,
+    public modalController: ModalController,
     private plt: Platform) {
     this.productId = "1mois";
     console.log("this.productid==", this.productId);
@@ -50,12 +52,16 @@ export class HomePage {
       // this.getMyPhoto();
     });
   }
+  ngOnInit() {
+    this.globalService.changeLanguage();
+  }
 
   ionViewDidLeave() {
     // this.store.off()segment: string = "1";
   }
   ionViewDidEnter() {
     console.log("view did load");
+    this.globalService.changeLanguage();
     this.segment = "1";
   }
 
@@ -92,6 +98,19 @@ export class HomePage {
     //   this.gotoMyprofile()
     // }
     // this.content.scrollToTop();
+  }
+  async searchFilter() {
+    const modal = await this.modalController.create({
+      component: SearchFilterPage,
+      componentProps: {
+        // 'searchType': this.segment
+      },
+      animated:true
+    });
+    modal.onWillDismiss().then((data) => {
+      console.log('data...!!',data);
+    });
+    return await modal.present();
   }
   
 }

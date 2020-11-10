@@ -22,8 +22,13 @@ export class ProfilePage implements OnInit {
     public translate: TranslateService) { }
 
   ngOnInit() {
+    this.globalService.changeLanguage();
   }
-  gotoStting(){
+  ionViewDidEnter() {
+    console.log("view did load");
+    this.globalService.changeLanguage();
+  }
+  gotoStting() {
     console.log('go to setting...!');
     this.router.navigate(['/setting']);
   }

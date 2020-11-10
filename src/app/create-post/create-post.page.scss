@@ -5,7 +5,7 @@
   .row-margin1{
     width: 90% !important;
       margin: 0 auto;
-      margin-top: 50px;
+      // margin-top: 50px;
   }
   .input-border{
     border-bottom: 1px solid #9E9E9E; 
@@ -32,4 +32,8 @@
   font-size: 1em;
   border-radius: 10px;
   background-color: #0080FF;
+  }
+  .textarea{
+    width: 100%;
+    height: 40px;
   }

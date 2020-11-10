@@ -1,31 +1,53 @@
 <ion-header>
-  <ion-toolbar class="new-background-color">
+  <ion-toolbar class="new-background-color-new">
     <ion-buttons slot="start">
       <ion-menu-button color="success"></ion-menu-button>
     </ion-buttons>
     <ion-title style="text-align: center;">{{value}}</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> 
+
+<!-- <ion-header>
+  <ion-toolbar class="new-background-color-new">
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title>{{'HOME.Login' | translate}}</ion-title>
+  </ion-toolbar>
+</ion-header> -->
 
 
 <ion-content>
+  <ion-row>
+    <ion-col size="11">
+      <ion-searchbar [showCancelButton]="shouldShowCancel" (ionCancel)="onCancel($event)">
+      </ion-searchbar>
+    </ion-col>
+    <ion-col size="1">
+      <ion-icon style="font-size: 25px;
+      padding-top: 14px;
+      margin-left: -10px;color: #1717ff;" (click)="searchFilter()" name="options-outline"></ion-icon>
+    </ion-col>
+  </ion-row>
   <ion-card>
     <ion-row class="line">
       <ion-col size="3" (click)="gotoprofile()">
-          <img src="assets/tower.jpg" class="height-width" />
+        <img src="assets/tower.jpg" class="height-width" />
       </ion-col>
       <ion-col size="9">
         <ion-row>
           <ion-col (click)="gotouserDetails()" size="8" class="text-overflow">
-            Leg spinner
+              Leg spinner
           </ion-col>
           <ion-col size="4" class="text-right">
-            <span style="background: #60ccef;"><ion-icon name="logo-usd"></ion-icon><span style="font-size: 16px;">5000</span></span>
+            <span style="background: #152d35;">
+              <span style="font-size: 16px;">
+               $5000</span>
+            </span>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col style="color: black;">
-            This is Discription 
+            This is Discription
           </ion-col>
         </ion-row>
         <ion-row>
@@ -33,10 +55,11 @@
             <ion-icon style="color: blue;" name="walk"></ion-icon> Foot Left leg
           </ion-col>
           <ion-col size="2" style="color: black;text-align: right;padding-left: 0px;">
-             <ion-icon style="color: blue;" name="man"></ion-icon>6ft
+            <ion-icon style="color: blue;" name="man"></ion-icon>6ft
           </ion-col>
           <ion-col size="4" class="text-right" style="color: black;">
-            <ion-icon style="color: blue;" name="location-outline"></ion-icon> <ion-label>
+            <ion-icon style="color: blue;" name="location-outline"></ion-icon>
+            <ion-label>
               Pune
             </ion-label>
           </ion-col>
@@ -44,7 +67,6 @@
       </ion-col>
     </ion-row>
   </ion-card>
-
 </ion-content>
 <ion-footer class="no-padding line">
   <ion-toolbar no-padding>
@@ -52,25 +74,25 @@
       <ion-segment-button value="1">
         <ion-icon class="footer-icon" name="home-outline"></ion-icon>
         <div class="logo-text">
-          Home
+          {{'Home' | translate}}
         </div>
       </ion-segment-button>
       <ion-segment-button (click)="createPosts()" value="2">
         <ion-icon class="footer-icon" name="add-circle-outline"></ion-icon>
         <div class="logo-text">
-          Create Post
+          {{'Create Post' | translate}}
         </div>
       </ion-segment-button>
       <ion-segment-button (click)="myPosts()" value="3">
         <ion-icon class="footer-icon" name="list"></ion-icon>
         <div class="logo-text">
-          My Post
+          {{'My Post' | translate}}
         </div>
       </ion-segment-button>
-      <ion-segment-button class="margin-left" (click)="gotoMyprofile()"  value="4">
+      <ion-segment-button class="margin-left" (click)="gotoMyprofile()" value="4">
         <ion-icon class="footer-icon" name="person-outline"></ion-icon>
         <div class="logo-text">
-          Profile
+          {{'Profile' | translate}}
         </div>
       </ion-segment-button>
     </ion-segment>

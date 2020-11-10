@@ -37,3 +37,14 @@ body.keyboard-is-open .hideElementOnKeyboardShown{
 .popover_class1 { 
     --min-width:300px; 
   }
+  .new-background-color-new{
+    background: url('assets/backgroundimg.jpeg') no-repeat center center;
+    // background-size: cover;
+    background-size: 100% 95%;
+    color: white;
+    background-position: center;
+  }
+  ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+  }

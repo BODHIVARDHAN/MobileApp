@@ -35,12 +35,10 @@ export class AppComponent {
       if(localStorage.getItem('language')){
         lang = localStorage.getItem('language');
       } 
-      // this.translate.setDefaultLang(lang);
-      // this.translate.use(lang);
       localStorage.setItem('language',lang); 
       this.translate.use(lang);
       // this._initialiseTranslation();   
-      this._initTranslate()
+      // this._initTranslate()
       if(!localStorage.getItem('token')){
         // this.navCtrl.navigateRoot('my-account');
         // this.navCtrl.navigateRoot('profile');

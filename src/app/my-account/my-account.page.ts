@@ -51,6 +51,10 @@ export class MyAccountPage implements OnInit {
   ngOnInit() {
     this.globalService.changeLanguage();
   }
+  ionViewDidEnter() {
+    console.log("view did load");
+    this.globalService.changeLanguage();
+  }
   changePlan(){
     this.router.navigate(['/buy-subcription']);
   }

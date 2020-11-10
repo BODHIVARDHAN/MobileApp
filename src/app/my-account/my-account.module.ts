@@ -6,15 +6,23 @@ import { IonicModule } from '@ionic/angular';
 
 import { MyAccountPageRoutingModule } from './my-account-routing.module';
 import { GlobalserviceService } from '../service/globalservice.service';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { MyAccountPage } from './my-account.page';
+import { createTranslateLoader } from '../setting/setting.module';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TranslateModule.forChild(),
+     TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      }
+    }),
     MyAccountPageRoutingModule
   ],
   declarations: [MyAccountPage],

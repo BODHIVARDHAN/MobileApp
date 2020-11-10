@@ -1,16 +1,23 @@
 <ion-header>
-  <ion-toolbar class="new-background-color">
+  <ion-toolbar class="new-background-color-new">
     <ion-buttons slot="start">
-      <!-- <ion-back-button defaultHref="/home"></ion-back-button> -->
     </ion-buttons>
     <ion-title>{{'HOME.Login' | translate}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!-- <ion-header padding="true" >
+  <ion-toolbar color=dark >
+<ion-title  >
+<img  object-fit: cover src="../../assets/backgroundimg.jpeg" >
+</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
 <ion-content>
-  <form [formGroup]="account" (ngSubmit)="login(account.value)"> 
+  <form [formGroup]="account"> 
     <ion-row class="row-margin1">
-      <ion-col>
+      <ion-col> 
         <ion-input class="input-border" type="text" placeholder="{{'Login.Email' | translate}}" formControlName="email"></ion-input>
         <div *ngIf="(account.controls.email.touched || submitAttempt) && account.controls.email.invalid" class="invalid">
         <p class="validation" *ngIf="account.controls.email.errors.required">{{'Login.Email is required' | translate}}.</p>
@@ -35,12 +42,12 @@
     
     <ion-row class="row-margin">
       <ion-col class="ion-text-end">
-        <a routerLink="/forgot-password"
-          style="color: #4267B2;font-size: 15px;">{{'Login.Forgot password' | translate}}</a>
+        <a routerLink="/forgot-password"                     
+          style="color: #4267B2;font-size: 15px;">{{'Login.Forgot password?' | translate}}</a>
       </ion-col>
     </ion-row>
 
-    <ion-row class="row-margin" style="margin-top: 20px;">
+    <ion-row class="row-margin" style="margin-top: 20px;" (click)="login()">
       <ion-col class="no-padding ion-text-left">
         <button ion-button block class="likeButton">
           <p style="display: inline-flex; margin: 0px;"> 
@@ -50,11 +57,11 @@
       </ion-col>
     </ion-row>
   </form>
-  <ion-row class="row-margin">
+  <!-- <ion-row class="row-margin">
       <ion-col class="ion-text-end"> 
         <button class="link-button" (click)="login1()">{{'Login.Skip Sign in' | translate}}</button>
       </ion-col>
-    </ion-row>
+    </ion-row> -->
   <!-- <ion-row class="row-margin" style="margin-top: 20px;">
       <ion-col class="no-padding ion-text-left">
         <button ion-button block class="likeButton" (click)="login1()">

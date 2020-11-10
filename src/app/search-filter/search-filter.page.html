@@ -1,7 +1,7 @@
-<ion-header>
-  <ion-toolbar class="new-background-color">
+<!-- <ion-header>
+  <ion-toolbar class="new-background-color-new">
     <ion-buttons slot="end" class="closeButton">
-      <ion-button class="new-background-color" (click)="close()">
+      <ion-button class="new-background-color-new" (click)="close()">
         <ion-icon name="close" color="light"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -9,31 +9,44 @@
       Filter
     </ion-title>
   </ion-toolbar>
+</ion-header>  -->
+<ion-header>
+  <ion-toolbar class="new-background-color-new">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title style="text-align: center;padding-left: 0px;margin-left: -25px;">{{'Filter' | translate}}</ion-title>
+    <!-- <ion-buttons slot="end">
+      <ion-icon class="logout" name="settings-outline" (click)="gotoStting()"></ion-icon>
+    </ion-buttons> -->
+  </ion-toolbar>
 </ion-header>
-
 
 <ion-content padding>
   <div>
     <ion-item>
       <ion-label class="inputLabels">
-        name :
+        name 
       </ion-label>
       <ion-input></ion-input>
     </ion-item>
     <ion-item-group>
-      <ion-item-divider style="border: none">
+      <!-- <ion-item-divider style="border: none">
         <ion-label style="margin-bottom: 0">
-          Height :
+          Height 
         </ion-label>
-      </ion-item-divider>
+      </ion-item-divider> -->
 
       <ion-item>
-        <ion-range no-padding pin="true" min="0" max="9" step="1" class="rangeHeight">
+        <ion-label class="inputLabels">
+          Height
+        </ion-label>
+        <ion-range style="padding: 0px;" pin="true" min="0" max="9" step="1" class="rangeHeight">
           <ion-label slot="start">
-            <ion-text class="new-background-color">0 Km</ion-text>
+            <ion-text style="color: blue;">0 foot</ion-text>
           </ion-label>
           <ion-label slot="end">
-            <ion-text class="new-background-color">9 Km</ion-text>
+            <ion-text style="color: blue;">9 foot</ion-text>
           </ion-label>
         </ion-range>
       </ion-item>
@@ -79,11 +92,11 @@
   <div>
     <ion-row>
       <ion-col>
-        <ion-button class="submitButton" expand="full" shape="round" color="secondary" (click)="filterProducts()">Apply
+        <ion-button class="submitButton" expand="full" shape="round"   (click)="filterProducts()">Apply
         </ion-button>
       </ion-col>
       <ion-col>
-        <ion-button class="submitButton" expand="block" shape="round" fill="outline" color="secondary"
+        <ion-button class="submitButton" expand="block" shape="round" fill="outline" style="color: #0080FF;"
           (click)="clearForProfile()">Clear</ion-button>
       </ion-col>
     </ion-row>

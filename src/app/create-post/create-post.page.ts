@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { GlobalserviceService } from '../service/globalservice.service';
 
 @Component({
   selector: 'app-create-post',
@@ -8,12 +10,21 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./create-post.page.scss'],
 })
 export class CreatePostPage implements OnInit {
-  createPost: FormGroup;;
+  createPost: FormGroup;
+  UrlsData: any[] = [];
+  UrlsDataImages: any[] = [];
+  UrlsDataVideo: any[] = [];
 
   constructor(public translate: TranslateService,
+    public router: Router,
+    route:ActivatedRoute,
+    public globalService: GlobalserviceService,
     formBuilder: FormBuilder
     ) {
-
+      // console.log('route.queryParams',route.queryParams);
+      route.params.subscribe(val => {
+        console.log('val...!!',val)
+      });
     this.createPost = formBuilder.group({
       first_name: ['', Validators.compose([Validators.required])],
       last_name: ['', Validators.compose([Validators.required])], 
@@ -30,7 +41,28 @@ export class CreatePostPage implements OnInit {
     });
    }
 
-  ngOnInit() {
+   ngOnInit() { 
+    this.globalService.changeLanguage();
+  }
+  ionViewDidEnter() {
+    console.log("view did load");
+    this.globalService.changeLanguage();
   }
 
+  addVideoLink(item){
+    this.UrlsDataVideo.push(item);
+    console.log('this.tiers',this.UrlsDataVideo);
+  }
+  addImageLink(item){
+    this.UrlsDataImages.push(item);
+    console.log('this.tiers',this.UrlsDataImages);
+  }
+  removeImageLink(item){
+    this.UrlsDataImages.pop();
+    console.log('this.tiers',this.UrlsDataImages);
+  }
+  removeVideoLink(item){
+    this.UrlsDataVideo.pop();
+    console.log('this.tiers',this.UrlsDataVideo);
+  }
 }

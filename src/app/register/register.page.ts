@@ -55,6 +55,7 @@ export class RegisterPage implements OnInit {
   }
 
   ngOnInit() {
+    this.globalService.changeLanguage();
   }
   login(){
     this.router.navigate(['/home']);

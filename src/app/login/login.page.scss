@@ -1,8 +1,23 @@
 .new-background-color{
-    // --background:#0080FF;
-    color: white;
-    --background: linear-gradient(90deg, rgba(246,3,22,1) 0%, rgba(33,97,217,1) 100%);
-  }
+    background: url('../../assets/backgroundimg.jpeg') no-repeat center center;
+    background-size: cover;
+    color: black;
+    background-position: center;
+    // color: white;
+    // --background: linear-gradient(90deg, rgba(246,3,22,1) 0%, rgba(33,97,217,1) 100%);
+
+}
+//   ion-toolbar {
+//     --background: transparent;
+//     --ion-color-base: transparent !important;
+//   }
+  
+//   .toolbar-background {
+//     background-image: url('../../assets/backgroundimg.jpeg')!important;
+//     background-size: cover;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+// }
 .row-margin{
     width: 90% !important;
     margin: 0 auto;

@@ -1,24 +1,32 @@
 <ion-header>
-  <ion-toolbar class="new-background-color">
+  <ion-toolbar class="new-background-color-new">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/home"></ion-back-button>
     </ion-buttons>
-    <ion-title>{{'MyAccount.Profile' | translate}}</ion-title>
-    <ion-buttons slot="end">
+    <ion-title>{{'Profile' | translate}}</ion-title>
+    <!-- <ion-buttons slot="end">
       <ion-icon class="logout" name="settings-outline" (click)="gotoStting()"></ion-icon>
-      <!-- <ion-icon class="logout" name="log-out-outline" (click)="logout()"></ion-icon> -->
-    </ion-buttons>
+    </ion-buttons> -->
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-row justify-content-center style="width: 100%;">
     <div cla id="img-container">
-      <img style="margin-left: 50%;" class="img_round" [src]="image || 'assets/blank-person.jpg'" />
+      <img style="margin-left: 60%;" class="img_round" [src]="image || 'assets/blank-person.jpg'" />
       <div class="profile_edit" (click)="selectImage()" *ngIf="Editvalue == true">
         <ion-icon name="create" style="color: white;"></ion-icon>
       </div>
     </div>
+  </ion-row>
+  <ion-row class="row-margin">
+    <ion-col>
+      <div style="text-align: left;font-size: 1rem;
+        color: green;">
+        <ion-icon name="person"></ion-icon>
+        {{'MyAccount.Managed By Parent' | translate}}
+      </div>
+    </ion-col>
   </ion-row>
   <ion-row class="row-margin">
     <ion-col>
@@ -53,23 +61,25 @@
 
   <ion-row class="row-margin">
     <ion-col>
-      <ion-input [disabled]="true" class="input-border" type="text" placeholder="">{{'Register.Defender' | translate}}</ion-input>
-    </ion-col>
-  </ion-row>
-  <ion-row class="row-margin">
-    <ion-col>
-      <ion-input [disabled]="true" class="input-border" type="text" placeholder="">{{'Register.Foot Left leg' | translate}}</ion-input>
-    </ion-col>
-  </ion-row>
-  <ion-row *ngIf="childAge<18" class="row-margin">
-    <ion-col>
-      <ion-input class="input-border" type="number" placeholder="">30 
+      <ion-input [disabled]="true" class="input-border" type="text" placeholder=""> {{'Defender' | translate}}
       </ion-input>
     </ion-col>
   </ion-row>
   <ion-row class="row-margin">
     <ion-col>
-      <ion-input [disabled]="true" class="input-border" type="text" placeholder="">{{'Register.Father' | translate}}</ion-input>
+      <ion-input [disabled]="true" class="input-border" type="text" placeholder=""> {{'Foot Left leg' | translate}}
+      </ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row *ngIf="childAge<18" class="row-margin">
+    <ion-col>
+      <ion-input class="input-border" type="number" placeholder="">30
+      </ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row class="row-margin">
+    <ion-col>
+      <ion-input [disabled]="true" class="input-border" type="text" placeholder=""> {{'Father' | translate}}</ion-input>
     </ion-col>
   </ion-row>
 </ion-content>

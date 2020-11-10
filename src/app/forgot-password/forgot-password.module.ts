@@ -6,8 +6,10 @@ import { IonicModule } from '@ionic/angular';
 
 import { ForgotPasswordPageRoutingModule } from './forgot-password-routing.module';
 import { GlobalserviceService } from '../service/globalservice.service';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { ForgotPasswordPage } from './forgot-password.page';
+import { createTranslateLoader } from '../setting/setting.module';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -15,7 +17,13 @@ import { ForgotPasswordPage } from './forgot-password.page';
     FormsModule,
     IonicModule,
     ReactiveFormsModule,
-    TranslateModule.forChild(),
+     TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      }
+    }),
     ForgotPasswordPageRoutingModule
   ],
   declarations: [ForgotPasswordPage],

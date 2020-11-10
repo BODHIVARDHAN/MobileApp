@@ -7,7 +7,9 @@ import { IonicModule } from '@ionic/angular';
 import { CreatePostPageRoutingModule } from './create-post-routing.module';
 
 import { CreatePostPage } from './create-post.page';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { createTranslateLoader } from '../setting/setting.module';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   imports: [
@@ -15,7 +17,14 @@ import { TranslateModule } from '@ngx-translate/core';
     FormsModule,
     IonicModule,
     ReactiveFormsModule,
-    TranslateModule.forChild(),
+    TranslateModule.forChild({
+     loader: {
+       provide: TranslateLoader,
+       useFactory: createTranslateLoader,
+       deps: [HttpClient]
+     }
+   }),
+
     CreatePostPageRoutingModule
   ],
   declarations: [CreatePostPage]

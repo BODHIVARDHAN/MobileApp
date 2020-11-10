@@ -6,16 +6,24 @@ import { IonicModule } from '@ionic/angular';
 
 import { LoginPageRoutingModule } from './login-routing.module';
 import { GlobalserviceService } from '../service/globalservice.service';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { LoginPage } from './login.page';
+import { createTranslateLoader } from '../setting/setting.module';
+import { HttpClient } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,  
-    ReactiveFormsModule,
-    TranslateModule.forChild(),
+    ReactiveFormsModule, 
+     TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
+      } 
+    }),
     LoginPageRoutingModule 
   ],
   declarations: [LoginPage],

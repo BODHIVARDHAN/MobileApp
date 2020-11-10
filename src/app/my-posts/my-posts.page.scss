@@ -15,7 +15,7 @@
   white-space: nowrap; 
   overflow: hidden;
   text-overflow: ellipsis;
-  color: black;
+  color:#0808ff;
 }
 .text-right{
   text-align: right;
@@ -25,4 +25,7 @@
 }
 .item-native {
   padding: 0px!important;
+}
+.submitButton{
+  height: 25px;
 }

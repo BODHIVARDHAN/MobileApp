@@ -1,41 +1,59 @@
 <ion-header>
-  <ion-toolbar class="new-background-color">
+  <ion-toolbar class="new-background-color-new">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/home"></ion-back-button>
     </ion-buttons>
-    <ion-title style="text-align: center;padding-left: 0px;">Post Details</ion-title>
+    <ion-title style="text-align: center;padding-left: 0px;margin-left: -30px;">Post Details</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-row style="padding: 10px;">
   <ion-row justify-content-center style="width: 100%;">
     <div>
       <img style="height: 180px;width: 100%;" src="assets/tower.jpg" />
-      <!-- <div (click)="selectImage()" *ngIf="Editvalue == true">
-        <ion-icon name="create" style="color: white;"></ion-icon>
-      </div> -->
     </div>
   </ion-row>
-  <ion-row>
-    <ion-col style="text-align: left;;font-size: 20px;">
+  <ion-row style="width: 100%;">
+    <ion-col size="8" style="text-align: left;;font-size: 20px;">
       <span>Leg spinner</span>
     </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col style="text-align: left;font-size: 15px;">
-      <span>Here is leg spinner,Pune</span>
+    <ion-col size="4" style="text-align: right;font-size: 16px;color: gray;">
+      <span style="font-size: 18px;">$</span>
+      <span>5000</span>
     </ion-col>
   </ion-row>
   <ion-row>
+    <ion-col class="text" style="text-align: justify;">
+      <span class="bold">Description :</span>
+      <span>The peculiar release point of Bumrah's deliveries makes it
+        hard for batsmen to pick him</span>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="text">
+      <ion-icon style="color: blue;" name="location-outline"></ion-icon><span class="bold">Location :</span>
+      <span>Pune</span>
+    </ion-col>
+  </ion-row>
+  </ion-row>
+  <ion-row style="background: lightblue;
+  padding: 10px;">
+  <!-- <ion-row>
     <ion-col style="text-align: left;font-size: 15px;color: gray;">
       <span style="font-size: 16px;">Expected Salary : </span> <ion-icon style="font-size: 14px;" name="logo-usd"></ion-icon><span style="font-size: 17px;">5000</span>
     </ion-col>
-  </ion-row>
-  <ion-row style="background: lightblue;
-padding: 10px;">
-    <ion-row>
-      <ion-col class="text">
-        <span class="bold">Name </span> : <span> Jasprit Jasbirsingh Bumrah </span>
+  </ion-row> -->
+    <ion-row style="width: 100%;">
+      <ion-col size="3" style="text-align: center;" (click)="gotoprofile()">
+        <img src="assets/tower.jpg" class="height-width" />
+      </ion-col>
+      <ion-col size="9" class="text">
+        <!-- <span class="bold">
+          
+        </span> : -->
+        <!-- <span class="bold">Name </span> : -->
+         <p style="font-weight:bold"> Jasprit Jasbirsingh Bumrah </p>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -48,14 +66,14 @@ padding: 10px;">
         <span class="bold">Height</span> : <span> 6 ft </span>
       </ion-col>
     </ion-row>
-    <!-- <ion-row>
-      <ion-col class="text" class="text">
-        <span class="bold">Playing role</span> : <span>Bowler</span>
-      </ion-col>
-    </ion-row> -->
     <ion-row>
       <ion-col class="text">
-        <span class="bold">Position : </span><span>Defender ;Middle ;Striker </span>
+        <span class="bold">Position : </span><span>Defender ,Middle ,Striker </span>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="text">
+        <span class="bold">Foot : </span><span>Foot left leg</span>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -64,14 +82,14 @@ padding: 10px;">
       </ion-col>
     </ion-row>
 
-    <ion-row>
+    <!-- <ion-row>
       <ion-col class="text">
         <span class="bold">Discription :</span>
         <span>Jasprit Bumrah grabbed eyeballs first with his unorthodox action, and then his bowling skills. Armed with
           an anomalous, sling-arm action and natural pace, the peculiar release point of Bumrah's deliveries makes it
           hard for batsmen to pick him</span>
       </ion-col>
-    </ion-row>
+    </ion-row> -->
     <ion-row>
       <ion-col class="text">
         <span class="bold">Check My Video Links:</span>
@@ -85,7 +103,7 @@ padding: 10px;">
     </ion-row>
     <ion-row>
       <ion-col class="text">
-        <span class="bold">Check My Images Links:</span>
+        <span class="bold">Check My Image Links:</span>
         <ul>
           <li><a href="url">https://www.youtube.com/watch?v=tLxMsmqF8EM</a></li>
           <li><a href="url">https://www.youtube.com/watch?v=svJkadBf8Z4</a></li>

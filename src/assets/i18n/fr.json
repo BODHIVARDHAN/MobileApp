@@ -34,30 +34,29 @@
         "Return":"Return"
     },
     "Login":{
-        "Email is required":"Email is required",
-        "Invalid email":"Invalid email",
-        "Password is required":"Password is required",
-        "passwordValid":"Password length should between 8 to 15 and it should contain uppercase,lowercase characters and numbers.",
+        "Email is required":"Le courriel est requis",
+        "Invalid email":"Email invalide",
+        "Password is required":"Mot de passe requis",
+        "passwordValid":"La longueur du mot de passe doit être comprise entre 8 et 15 et doit contenir des majuscules, des minuscules et des chiffres.",
         "Email":"Email",
-        "Password":"Password",
-        "Log In":"Log In",
-        "Forgot password":"Forgot password?",
-        "Guest":"Guest",
-        "OR":"OR",
-        "Dont have an account":"Don't have an account",
-        "Sign up":"Sign up",
-        "Skip Sign in":"Skip Sign in",
-        "login_success":"Login Successfully",
-        "login_failed":"something went wrong please try again later",
-        "please_check_the_credentials":"Please check the credentials."
+        "Password":"Mot de passe",
+        "Log In":"s'identifier",
+        "Forgot password?":"Mot de passe oublié?",
+        "Guest":"Cliente",
+        "OR":"OU",
+        "Dont have an account":"Je n'ai pas de compte",
+        "Sign up":"S'inscrire",
+        "Skip Sign in":"Ignorer la connexion",
+        "login_success":"Connexion réussie",
+        "login_failed":"Quelque chose c'est mal passé. Merci d'essayer plus tard",
+        "please_check_the_credentials":"Veuillez vérifier les informations d'identification."
     },
     "PhotoDiscription":{
         "Photo Title":"Photo Title",
         "Photo Address":"Photo Address",
         "Photo Discription":"Photo Discription",
         "Take Photo":"Take Photo"
-    },
-    "Register":{ 
+    },  
         "Email":"Email",
         "Mobile Number":"Mobile Number",
         "Password":"Mot de passe",
@@ -116,8 +115,11 @@
         "Immediate":"Immédiate",
         "After one month":"Après un mois",
         "After two month":"Après deux mois",
-        "Please select Availability.":"Veuillez sélectionner Disponibilité."
-    },
+        "Please select Availability.":"Veuillez sélectionner Disponibilité.",
+        "OR":"OU",
+        "Title":"Titre",
+        "Title is required.":"Le titre est obligatoire."
+    ,
     "SelectImage":{
         "Click on camera to capture":"Click on camera to capture",
         "Capture Image":"Capture Image"
@@ -144,8 +146,9 @@
         "Price":"Price",
         "Update Profile":"Mettre à jour le profil",
         "Personal Information":"Informations personnelles",
+        "Managed By Parent":"Géré par le parent",
         "Profile":"Profil",
-        "Save":"Save",
+        "Save":"sauvegarder",
         "Setting":"Réglage"
     },
     "Subcription":{
@@ -173,7 +176,21 @@
         "most_liked_photo_of_week":"Most liked photo of week"
     },
     "ForgotPassword":{
-        "Forgot Password":"Forgot Password",
-        "Submit":"Submit"
-    }
+        "Forgot Password":"Mot de passe oublié",
+        "Submit":"Soumettre"
+    },
+    "Create Post": "Créer un",
+    "My Post": "Mon message",
+    "Profile": "Profil",
+    "Select Language": "Choisir la langue",
+    "Register": "S'inscrire",
+    "Save": "sauvegarder",
+    "Log out": "Se déconnecter",
+    "Add Video links": "Ajouter des liens vidéo",
+    "Add Video link": "Ajouter un lien vidéo",
+    "Add Image links": "Ajouter des liens d'image",
+    "Add Image link": "Ajouter un lien d'image",
+    "Description": "La description",
+    "Confirm": "Confirmer",
+    "Filter": "Filtre"
 }

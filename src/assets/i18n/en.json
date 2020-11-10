@@ -41,7 +41,7 @@
         "Email":"Email",
         "Password":"Password",
         "Log In":"Log In",
-        "Forgot password":"Forgot password?",
+        "Forgot password?":"Forgot password",
         "Guest":"Guest",
         "OR":"OR",
         "Dont have an account":"Don't have an account",
@@ -50,14 +50,13 @@
         "login_success":"Login Successfully",
         "login_failed":"something went wrong please try again later",
         "please_check_the_credentials":"Please check the credentials."
-    },
+    }, 
     "PhotoDiscription":{
         "Photo Title":"Photo Title",
         "Photo Address":"Photo Address",
         "Photo Discription":"Photo Discription",
         "Take Photo":"Take Photo"
     },
-    "Register":{ 
         "Email":"Email",
         "Age":"Age",
         "Invalid Age":"Invalid Age",
@@ -116,8 +115,10 @@
         "Immediate":"Immediate",
         "After one month":"After one month",
         "After two month":"After two month",
-        "Please select Availability.":"Please select Availability."
-    },
+        "Please select Availability.":"Please select Availability.",
+        "Title":"Title",
+        "Title is required.":"Title is required."
+    ,
     "SelectImage":{
         "Click on camera to capture":"Click on camera to capture",
         "Capture Image":"Capture Image"
@@ -144,6 +145,7 @@
         "Price":"Price",
         "Update Profile":"Update Profile",
         "Personal Information":"Personal Information",
+        "Managed By Parent":"Managed By Parent",
         "Profile":"Profile",
         "Save":"Save",
         "Setting":"Setting"
@@ -175,5 +177,19 @@
     "ForgotPassword":{
         "Forgot Password":"Forgot Password",
         "Submit":"Submit"
-    }
+    },
+    "Create Post": "Create Post",
+    "My Post": "My Post",
+    "Profile": "Profile",
+    "Select Language": "Select Language",
+    "Register": "Register" ,
+    "Save": "Save",
+    "Log out": "Log out",
+    "Add Video links": "Add Video links",
+    "Add Video link": "Add Video link",
+    "Add Image links": "Add Image links",
+    "Add Image link": "Add Image link",
+    "Description": "Description",
+    "Confirm": "Confirm",
+    "Filter": "Filter"
 }

@@ -1,5 +1,5 @@
 <ion-header>
-    <ion-toolbar class="new-background-color">
+    <ion-toolbar class="new-background-color-new">
       <ion-buttons slot="start">
         <ion-back-button defaultHref="/home"></ion-back-button>
       </ion-buttons>
@@ -16,11 +16,7 @@
     <!-- <form [formGroup]="form"> -->
     <ion-row>
         <ion-col col-10>
-            <!-- <ion-icon name="man"></ion-icon>Manage By Parent -->
         </ion-col>
-        <!-- <ion-col col-2>     
-            <ion-label>{{'Register.Edit Profile' | translate}}</ion-label>
-        </ion-col> -->
         <ion-col col-2 style="text-align: right;">
             <ion-icon *ngIf="Editvalue == false" name="create" class="edit_icon" (click)="Editvaluefun(Editvalue)"
                 style="padding-right: 10px;"></ion-icon>
@@ -46,142 +42,132 @@
         <ion-col>
             <div style="text-align: left;padding-left: 7px;font-size: 1rem;
             color: green;">
-                <ion-icon name="person"></ion-icon>Managed By Parent
+                <ion-icon name="person"></ion-icon>
+                {{'MyAccount.Managed By Parent' | translate}}
             </div>
         </ion-col>
     </ion-row>
 
     <ion-row class="row-margin">
         <ion-col>
-            <ion-input class="input-border" type="text" placeholder="{{'Register.First Name' | translate}}"></ion-input>
+            <ion-input class="input-border" type="text" placeholder=" {{'First Name' | translate}}"></ion-input>
             <!-- <div *ngIf="(account.controls.first_name.touched || submitAttempt) && account.controls.first_name.invalid"
             class="invalid">
             <p class="validation" *ngIf="account.controls.first_name.errors.required">
-              {{'Register.firstname is required.' | translate}}</p>
+               {{'firstname is required.' | translate}}</p>
           </div> -->
         </ion-col>
     </ion-row>
 
     <ion-row class="row-margin">
         <ion-col>
-            <ion-input class="input-border" type="text" placeholder="{{'Register.Last Name' | translate}}"></ion-input>
+            <ion-input class="input-border" type="text" placeholder=" {{'Last Name' | translate}}"></ion-input>
             <!-- <div *ngIf="(account.controls.last_name.touched || submitAttempt) && account.controls.last_name.invalid"
             class="invalid">
             <p class="validation" *ngIf="account.controls.last_name.errors.required">
-              {{'Register.lastname is required.' | translate}}</p>
+               {{'lastname is required.' | translate}}</p>
           </div> -->
         </ion-col>
     </ion-row>
     <ion-row class="row-margin">
         <ion-col>
-            <ion-input class="input-border" type="number" placeholder="{{'Register.Email' | translate}}"></ion-input>
+            <ion-input class="input-border" type="number" placeholder=" {{'Email' | translate}}"></ion-input>
             <!-- <div *ngIf="(account.controls.email.touched || submitAttempt) && account.controls.email.invalid"
             class="invalid">
             <p class="validation" *ngIf="account.controls.email.errors.required">
-              {{'Register.Email is required' | translate}}.</p>
-            <p class="validation" *ngIf="account.controls.email.errors.pattern">{{'Register.Invalid email' | translate}}.
+               {{'Email is required' | translate}}.</p>
+            <p class="validation" *ngIf="account.controls.email.errors.pattern"> {{'Invalid email' | translate}}.
             </p>
           </div> -->
         </ion-col>
     </ion-row>
 
-    <ion-row class="">
+       <ion-row class="row-margin">
+        <ion-col>
+            <ion-input class="input-border" type="text" placeholder=" {{'Height' | translate}}"></ion-input>
+            <!-- <div *ngIf="(account.controls.height.touched || submitAttempt) && account.controls.height.invalid"
+            class="invalid">
+            <p class="validation" *ngIf="account.controls.height.errors.required">
+               {{'Height is required' | translate}}.</p>
+            <p class="validation" *ngIf="account.controls.height.errors.pattern">
+               {{'Invalid Height' | translate}}.
+            </p>
+          </div> -->
+        </ion-col>
+    </ion-row>
+
+    <ion-row class="row-margin" style="margin: 0;
+    margin-left: 10px;">
         <ion-col no-padding>
-            <ion-item no-padding style="color: gray;padding-left: 5px;">
-                <ion-label stacked class="textLabel">{{'Register.Date of Birth*' | translate}}</ion-label>
+            <ion-item no-padding style="color: gray;">
+                <ion-label stacked class="textLabel"> {{'Date of Birth*' | translate}}</ion-label>
                 <ion-datetime displayFormat="DD-MMM-YYYY" [max]="currentDate" (ionChange)="validate($event)"
                     [placeholder]="'Date of Birth*' | translate"></ion-datetime>
             </ion-item>
         </ion-col>
     </ion-row>
 
-    <ion-row class="row-margin">
-        <ion-col>
-            <ion-input class="input-border" type="text" placeholder="{{'Register.Height' | translate}}"></ion-input>
-            <!-- <div *ngIf="(account.controls.height.touched || submitAttempt) && account.controls.height.invalid"
-            class="invalid">
-            <p class="validation" *ngIf="account.controls.height.errors.required">
-              {{'Register.Height is required' | translate}}.</p>
-            <p class="validation" *ngIf="account.controls.height.errors.pattern">
-              {{'Register.Invalid Height' | translate}}.
-            </p>
-          </div> -->
-        </ion-col>
-    </ion-row>
-
     <ion-row class="row-margin" style="margin: 0;
-      margin-left: 5px;">
+      margin-left: 10px;">
         <ion-col>
             <ion-item style="color: gray;">
-                <ion-label>{{'Register.Position' | translate}}</ion-label>
+                <ion-label> {{'Position' | translate}}</ion-label>
                 <ion-select value="brown" interface="popover" ok-text="Okay" cancel-text="CANCEL">
-                    <ion-select-option value="brown">{{'Register.Defender' | translate}}</ion-select-option>
-                    <ion-select-option value="blonde">{{'Register.Middle' | translate}}</ion-select-option>
-                    <ion-select-option value="blonde">{{'Register.Striker' | translate}}</ion-select-option>
+                    <ion-select-option value="brown"> {{'Defender' | translate}}</ion-select-option>
+                    <ion-select-option value="blonde"> {{'Middle' | translate}}</ion-select-option>
+                    <ion-select-option value="blonde"> {{'Striker' | translate}}</ion-select-option>
                 </ion-select>
             </ion-item>
-            <!-- <div style="padding-left: 10px;"
-            *ngIf="(account.controls.position.touched || submitAttempt) && account.controls.position.invalid"
-            class="invalid">
-            <p class="validation" *ngIf="account.controls.position.errors.required">
-              {{'Register.Position is required' | translate}}.</p>
-          </div> -->
         </ion-col>
     </ion-row>
 
     <ion-row class="row-margin" style="margin: 0;
-      margin-left: 5px;">
+      margin-left: 10px;">
         <ion-col>
             <ion-item style="color: gray;">
-                <ion-label>{{'Register.Foot' | translate}}</ion-label>
+                <ion-label> {{'Foot' | translate}}</ion-label>
                 <ion-select value="brown" interface="popover" ok-text="Yes" cancel-text="CANCEL">
-                    <ion-select-option value="brown">{{'Register.Foot Left leg' | translate}}</ion-select-option>
-                    <ion-select-option value="blonde">{{'Register.Foot Right leg' | translate}}</ion-select-option>
+                    <ion-select-option value="brown"> {{'Foot Left leg' | translate}}</ion-select-option>
+                    <ion-select-option value="blonde"> {{'Foot Right leg' | translate}}</ion-select-option>
                 </ion-select>
             </ion-item>
-            <!-- <div style="padding-left: 10px;"
-            *ngIf="(account.controls.position.touched || submitAttempt) && account.controls.position.invalid"
-            class="invalid">
-            <p class="validation" *ngIf="account.controls.position.errors.required">
-              {{'Register.This field is required.' | translate}} </p>
-          </div> -->
         </ion-col>
     </ion-row>
     <!-- <div class="row-margin"> -->
     <ion-row *ngIf="childAge<18" class="row-margin">
         <ion-col>
-            <ion-input class="input-border" type="number" placeholder="{{'Register.Parent Age' | translate}}">
+            <ion-input class="input-border" type="number" placeholder=" {{'Parent Age' | translate}}">
             </ion-input>
             <!-- <div *ngIf="(account.controls.p_age.touched || submitAttempt) && account.controls.p_age.invalid" class="invalid">
                   <p class="validation" *ngIf="account.controls.p_age.errors.required">
-                    {{'Register.Parent Age is required' | translate}}</p>
-                  <p class="validation" *ngIf="account.controls.p_age.errors.pattern">{{'Register.Invalid Parent Age' | translate}}
+                     {{'Parent Age is required' | translate}}</p>
+                  <p class="validation" *ngIf="account.controls.p_age.errors.pattern"> {{'Invalid Parent Age' | translate}}
                   </p>
                 </div> -->
         </ion-col>
     </ion-row>
 
     <ion-row *ngIf="childAge<18" class="row-margin" style="margin: 0;
-            margin-left: 5px;">
+            margin-left: 10px;">
         <ion-col>
             <ion-item style="color: gray;">
-                <ion-label>{{'Register.Relation' | translate}}</ion-label>
+                <ion-label> {{'Relation' | translate}}</ion-label>
                 <ion-select value="brown" interface="popover" ok-text="Okay" cancel-text="CANCEL">
                     <!-- <ion-select-option value="">Select Position</ion-select-option> -->
-                    <ion-select-option value="brown">{{'Register.Father' | translate}}</ion-select-option>
-                    <ion-select-option value="blonde">{{'Register.Mother' | translate}}</ion-select-option>
-                    <ion-select-option value="blonde">{{'Register.Brother' | translate}}</ion-select-option>
-                    <ion-select-option value="blonde">{{'Register.Sister' | translate}}</ion-select-option>
+                    <ion-select-option value="brown"> {{'Father' | translate}}</ion-select-option>
+                    <ion-select-option value="blonde"> {{'Mother' | translate}}</ion-select-option>
+                    <ion-select-option value="blonde"> {{'Brother' | translate}}</ion-select-option>
+                    <ion-select-option value="blonde"> {{'Sister' | translate}}</ion-select-option>
                 </ion-select>
             </ion-item>
         </ion-col>
     </ion-row>
-    <!-- <ion-row class="row-margin" (click)="uploadUrl()">
+    <!-- <ion-row style="margin-left: 10px;" class="row-margin" (click)="uploadUrl()">
         <ion-col style="color: gray;">
             <label>Upload Image</label>
         </ion-col>
     </ion-row>
-    <ion-row class="row-margin">
+    <ion-row style="margin-left: 10px;" class="row-margin">
         <ion-col style="color: gray;">
             <label class="btn btn-primary center pad fileinput-button browse_lable">
                 <input id="media" type="file" accept="image/*" (change)="uploadImage($event)"></label>
@@ -189,7 +175,7 @@
             <span class="fileupload-loading "></span>
         </ion-col>
     </ion-row>
-    <ion-row class="row-margin" *ngFor="let item of UrlsData">
+    <ion-row style="margin-left: 10px;" class="row-margin" *ngFor="let item of UrlsData">
         <ion-col col-11>
             <ion-input class="input-border" type="Url" placeholder="Add Url">
                 <ion-icon name="link"></ion-icon>
@@ -204,7 +190,7 @@
             <button ion-button block class="likeButton">
                 <p style="display: inline-flex; margin: 0px;">
                     <span
-                        style="padding-left: 10px;font-size: 1.1em; color: white;">{{'MyAccount.Save' | translate}}</span>
+                        style="padding-left: 10px;font-size: 1.1em; color: white;">{{'Save' | translate}}</span>
                 </p>
             </button>
         </ion-col>

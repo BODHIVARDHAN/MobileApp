@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalController } from '@ionic/angular';
+import { ModalController, NavController } from '@ionic/angular';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -11,7 +11,8 @@ export class SearchFilterPage implements OnInit {
 
   filteredEvents: any;
   constructor(public modalController: ModalController,
-    public translate: TranslateService,) { }
+    public translate: TranslateService,
+    public navCtrl:NavController) { }
 
   ngOnInit() {
     console.log('Enters into model...!');
@@ -23,6 +24,9 @@ export class SearchFilterPage implements OnInit {
   closeModal() {
 
     this.modalController.dismiss(this.filteredEvents,"true");
+  }
+  filterProducts(){
+    this.modalController.dismiss();
   }
 
 }
